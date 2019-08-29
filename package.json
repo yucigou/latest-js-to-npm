@@ -1,22 +1,12 @@
 {
-  "name": "latest-js-to-npm",
+  "name": "typescript-to-npm",
   "version": "1.0.0",
-  "description": "Keep the latest JavaScript files in a src directory and build with npm's prepublish script and output to the lib directory.",
+  "description": "Keep TypeScript files in a src directory and build with npm's prepublish script and output to the lib directory.",
   "main": "lib/index.js",
   "scripts": {
-    "prepublish": "babel src -d lib"
+    "prepublish": "tsc"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  }
+  "license": "ISC"
 }
